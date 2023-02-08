@@ -11,10 +11,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>GitHub App Sample Integration</h1>
-    <button id="btn-github" type="button" class="btn btn-light"><i class="bi bi-github"></i> Connect with GitHub</button>
-  </div>
+    <div class="row mt-3">
+      <div class="col">
+        <h1>GitHub App Sample Integration</h1>
+        <p>POC assumindo que VOCE ainda não tem a APP instalada, caso contrário alguns efeitos colaterais no popup irão ocorrer...</p>
+        <button id="btn-github" type="button" class="btn btn-secondary"><i class="bi bi-github"></i> Connect with GitHub</button>
+      </div>
+    </div>
 
+    <div class="row mt-3">
+      <div class="col">
+        <div class="alert alert-primary d-none" id="message">
+          Autorizado!
+        </div>
+      </div>
+    </div>
+
+  </div>
   <script src="js/popup.js?no-cache=<?php echo time();?>"></script>
 </body>
 </html>

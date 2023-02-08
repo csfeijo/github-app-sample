@@ -8,15 +8,8 @@
 </head>
 <body>
   
-<?php 
-if (isset($_GET['authorized'])) {
-  echo 'DEU';
-} else {
-?>
-  <script src="js/redirect.js?no-cache=<?php echo time(); ?>"></script>
-<?php
-}
-?>
+<script src="js/redirect.js?no-cache=<?php echo time(); ?>"></script>
+
 
 </body>
 </html>
