@@ -11,10 +11,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>GitHub App Sample</h1>
+    <h1>GitHub App Sample Integration</h1>
     <button id="btn-github" type="button" class="btn btn-light"><i class="bi bi-github"></i> Connect with GitHub</button>
   </div>
 
-  <script src="js/popup.js"></script>
+  <script src="js/popup.js?no-cache=<?php echo time();?>"></script>
 </body>
 </html>
