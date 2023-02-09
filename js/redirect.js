@@ -1,8 +1,19 @@
-const clientId = 'd27145d6e9fabc1dd117'
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
 
-// authorized fui eu que inventei
-const redirectUri = 'https://professorfeijo.com.br/github/popup.php?authorized=true'
+if (params.get('authorize') === null) {
+    const clientId = 'Iv1.5c6b110254b442ec'
+    // authorized fui eu que inventei para saber se tá voltando
+    //const redirectUri = 'https://www.professorfeijo.com.br/github-app-sample/popup.php?authorize=true'
+    //const scope = '&scope=read%3Auser%2Cuser%3Aemail'
 
-const scope = 'repo'
-
-window.location = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`
+    // Redirect
+    //window.location = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}${scope}`
+    // MANDA DIRETO PARA CÁ
+    window.location = 'https://github.com/apps/rtm-nextjs-integration-poc/installations/new'
+} else {
+    window.opener.showMessage({
+        installationID: params.get('installation_id')
+    })
+    window.close()
+}
