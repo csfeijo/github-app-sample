@@ -35,16 +35,3 @@ encoded_jwt = jwt_instance.encode(payload, signing_key, alg='RS256')
 print(f"JWT:  ", encoded_jwt)
 
 
-# import time
-
-# iat = time.time()
-# exp = time.time() * 600
-# iss = "291264"
-
-# print('{')
-# print(f' "iat" : {iat},')
-# print(f' "exp" : {exp},')
-# print(f' "iss" : {iss}')
-# print('}')
-
-
