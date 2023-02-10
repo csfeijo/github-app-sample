@@ -13,7 +13,7 @@
   <div class="container">
     <div class="row mt-3">
       <div class="col">
-        <h1>GitHub App Sample Integration</h1>
+        <h1>GitHub App Sample Integration POC</h1>
         <p>POC assumindo que VOCE ainda não tem a APP instalada, caso contrário alguns efeitos colaterais no popup irão ocorrer...</p>
         <button id="btn-github" type="button" class="btn btn-secondary"><i class="bi bi-github"></i> Connect with GitHub</button>
       </div>
@@ -25,6 +25,22 @@
           Autorizado!
         </div>
       </div>
+    </div>
+
+    <div class="row mt-3 d-none" id="list-repo-container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Repositórios do Usuário vinculados a esta APP:
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
     </div>
 
   </div>

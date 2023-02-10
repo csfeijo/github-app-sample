@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "c97fd7a0-7c50-4d0f-8756-95ed1d780257",
+		"name": "GitHub API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19507629"
+	},
+	"item": [
+		{
+			"name": "GET /installations/installation_id/access_tokens",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/app/installations/{{installation_id}}/access_tokens",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"app",
+						"installations",
+						"{{installation_id}}",
+						"access_tokens"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
